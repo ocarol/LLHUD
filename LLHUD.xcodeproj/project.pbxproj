@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121EEC991C2065710072177D /* LLHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 121EEC981C2065710072177D /* LLHUD.m */; };
+		121EEC9D1C20660B0072177D /* HUD_failure.png in Resources */ = {isa = PBXBuildFile; fileRef = 121EEC9B1C20660B0072177D /* HUD_failure.png */; };
+		121EEC9E1C20660B0072177D /* HUD_sucess.png in Resources */ = {isa = PBXBuildFile; fileRef = 121EEC9C1C20660B0072177D /* HUD_sucess.png */; };
 		12B5F91E1C2061830067F239 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B5F91D1C2061830067F239 /* main.m */; };
 		12B5F9211C2061830067F239 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B5F9201C2061830067F239 /* AppDelegate.m */; };
 		12B5F9241C2061830067F239 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B5F9231C2061830067F239 /* ViewController.m */; };
@@ -35,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		121EEC971C2065710072177D /* LLHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLHUD.h; sourceTree = "<group>"; };
+		121EEC981C2065710072177D /* LLHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLHUD.m; sourceTree = "<group>"; };
+		121EEC9B1C20660B0072177D /* HUD_failure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HUD_failure.png; sourceTree = "<group>"; };
+		121EEC9C1C20660B0072177D /* HUD_sucess.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HUD_sucess.png; sourceTree = "<group>"; };
 		12B5F9191C2061830067F239 /* LLHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLHUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B5F91D1C2061830067F239 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		12B5F91F1C2061830067F239 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		121EEC9A1C20660B0072177D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				121EEC9B1C20660B0072177D /* HUD_failure.png */,
+				121EEC9C1C20660B0072177D /* HUD_sucess.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		12B5F9101C2061830067F239 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +121,8 @@
 				12B5F9201C2061830067F239 /* AppDelegate.m */,
 				12B5F9221C2061830067F239 /* ViewController.h */,
 				12B5F9231C2061830067F239 /* ViewController.m */,
+				121EEC971C2065710072177D /* LLHUD.h */,
+				121EEC981C2065710072177D /* LLHUD.m */,
 				12B5F9251C2061830067F239 /* Main.storyboard */,
 				12B5F9281C2061830067F239 /* Assets.xcassets */,
 				12B5F92A1C2061830067F239 /* LaunchScreen.storyboard */,
@@ -117,6 +135,7 @@
 		12B5F91C1C2061830067F239 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				121EEC9A1C20660B0072177D /* images */,
 				12B5F91D1C2061830067F239 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -248,6 +267,8 @@
 			files = (
 				12B5F92C1C2061830067F239 /* LaunchScreen.storyboard in Resources */,
 				12B5F9291C2061830067F239 /* Assets.xcassets in Resources */,
+				121EEC9E1C20660B0072177D /* HUD_sucess.png in Resources */,
+				121EEC9D1C20660B0072177D /* HUD_failure.png in Resources */,
 				12B5F9271C2061830067F239 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +297,7 @@
 				12B5F9241C2061830067F239 /* ViewController.m in Sources */,
 				12B5F9211C2061830067F239 /* AppDelegate.m in Sources */,
 				12B5F91E1C2061830067F239 /* main.m in Sources */,
+				121EEC991C2065710072177D /* LLHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +523,7 @@
 				12B5F9481C2061830067F239 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12B5F9491C2061830067F239 /* Build configuration list for PBXNativeTarget "LLHUDTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +532,7 @@
 				12B5F94B1C2061830067F239 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12B5F94C1C2061830067F239 /* Build configuration list for PBXNativeTarget "LLHUDUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +541,7 @@
 				12B5F94E1C2061830067F239 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

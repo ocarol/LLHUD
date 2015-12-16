@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  LLHUD
 //
-//  Created by 余丽丽 on 15/12/15.
+//  Created by ocarol on 15/12/15.
 //  Copyright © 2015年 ocarol. All rights reserved.
 //
 

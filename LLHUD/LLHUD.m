@@ -210,6 +210,18 @@
 
 }
 
+- (void)hiden{
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [UIView animateWithDuration:1 animations:^{
+            self.alpha = 0.1;
+        } completion:^(BOOL finished) {
+             [self remove];
+        }];
+    });
+
+}
+
 - (void)setMessage:(NSString *)message{
     _message = message;
     self.messageLabel.text = message;

@@ -22,5 +22,5 @@ typedef NS_ENUM(NSInteger, HUDStyle) {
 + (instancetype)HUDWithStyle:(HUDStyle)hudStyle cancel:(NSString*)cancel other:(NSString*)other;
 
 - (void)show;
-
+- (void)hiden;
 @end

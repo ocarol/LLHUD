@@ -61,6 +61,15 @@
                                     <action selector="Btn20:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ebu-hs-yc7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57E-Dc-Gbo">
+                                <rect key="frame" x="25" y="378" width="104" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.96880514250000005" green="0.96441069980000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="22"/>
+                                <connections>
+                                    <action selector="Btn22:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Plu-Zs-7bB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.42714827606522499" green="1" blue="0.72662483448892212" alpha="1" colorSpace="calibratedRGB"/>

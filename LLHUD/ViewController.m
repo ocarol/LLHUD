@@ -30,7 +30,6 @@
     hub.message = @"兑换成功!";
     hub.iconImg = [UIImage imageNamed:@"HUD_sucess"];
     [hub show];
-    
 }
 
 - (IBAction)Btn17:(id)sender {
@@ -56,6 +55,15 @@
     [hub show];
 }
 
+- (IBAction)Btn22:(id)sender {
+    
+    LLHUD *hub = [LLHUD HUDWithStyle:HUDStyleMesseage cancel:nil other:nil];
+    hub.message = @"兑换成功!";
+    hub.iconImg = [UIImage imageNamed:@"HUD_sucess"];
+    [hub show];
+    [hub hiden];
+
+}
 
 
 @end

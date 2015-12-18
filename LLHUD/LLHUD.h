@@ -23,4 +23,5 @@ typedef NS_ENUM(NSInteger, HUDStyle) {
 
 - (void)show;
 - (void)hiden;
+- (void)hiden_afterSeconds:(int)delayInseconds;
 @end

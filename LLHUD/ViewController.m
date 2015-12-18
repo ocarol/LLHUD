@@ -65,5 +65,13 @@
 
 }
 
+- (IBAction)Btn23:(id)sender {
+    
+    LLHUD *hub = [LLHUD HUDWithStyle:HUDStyleMesseage cancel:nil other:nil];
+    hub.message = @"兑换失败!";
+    hub.iconImg = [UIImage imageNamed:@"HUD_failure"];
+    [hub show];
+    [hub hiden_afterSeconds:0.1];
+}
 
 @end

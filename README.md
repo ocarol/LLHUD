@@ -1,7 +1,7 @@
 # LLHUD
 蒙版弹窗
 
-![](LLHUD.gif)
+![](LLHUDDemo.gif)
 
 用法比较简单,当然功能也很简单(目前只有两种样式,HUDStyleMesseage和HUDStyleTelphone),按钮最多支持2个,以下给出几个事例:
 
@@ -26,5 +26,31 @@
     hub.telphoneNum = @"4008-000-000";
     hub.iconImg = [UIImage imageNamed:@"HUD_failure"];
     [hub show];
+}
+```
+#蒙版自动消失
+- (void)hiden;
+```objc
+- (IBAction)Btn22:(id)sender {
+
+LLHUD *hub = [LLHUD HUDWithStyle:HUDStyleMesseage cancel:nil other:nil];
+hub.message = @"兑换成功!";
+hub.iconImg = [UIImage imageNamed:@"HUD_sucess"];
+[hub show];
+[hub hiden];
+
+}
+```
+
+#自定义蒙版消失延迟时间
+- (void)hiden_afterSeconds:(int)delayInseconds;
+```objc
+- (IBAction)Btn23:(id)sender {
+
+LLHUD *hub = [LLHUD HUDWithStyle:HUDStyleMesseage cancel:nil other:nil];
+hub.message = @"兑换失败!";
+hub.iconImg = [UIImage imageNamed:@"HUD_failure"];
+[hub show];
+[hub hiden_afterSeconds:0.1];
 }
 ```

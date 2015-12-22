@@ -42,7 +42,7 @@ hub.iconImg = [UIImage imageNamed:@"HUD_sucess"];
 }
 ```
 
-#自定义蒙版消失延迟时间
+#自定义蒙版消失的延迟时间
 - (void)hiden_afterSeconds:(int)delayInseconds;
 ```objc
 - (IBAction)Btn23:(id)sender {

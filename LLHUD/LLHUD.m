@@ -37,17 +37,16 @@
 
 @implementation LLHUD
 
-+ (instancetype)HUDWithStyle:(HUDStyle)hudStyle cancel:(NSString*)cancel other:(NSString*)other{
++ (instancetype)HUDWithStyle:(HUDStyle)hudStyle cancel:(NSString*)cancel other:(NSString*)other {
     
     // 蒙版
     LLHUD *cover = [self new];
     cover.backgroundColor =  [UIColor colorWithWhite:0 alpha:0.7];
     
     return [cover HUDWithStyle:hudStyle cancel:cancel other:other];
-    
 }
 
-- (instancetype)HUDWithStyle:(HUDStyle)hudStyle cancel:(NSString*)cancel other:(NSString*)other{
+- (instancetype)HUDWithStyle:(HUDStyle)hudStyle cancel:(NSString*)cancel other:(NSString*)other {
     
     // alerView
     self.alerView = [UIView new];
@@ -109,14 +108,13 @@
         
     }
     
-
     return self;
-
-
 }
-- (void)layoutSubviews{
+
+- (void)layoutSubviews {
     
     [super layoutSubviews];
+    
     CGFloat Y;
     CGFloat margin = 20 * AutoSizeScaleY;
     self.frame = CGRectMake(0, 0, KScreenWidth, KScreenHeight);
@@ -185,38 +183,32 @@
 
 }
 
-- (void)didClickOtherBtn{
-
+- (void)didClickOtherBtn {
+    
      if((self.hudStyle & HUDStyleTelphone) == HUDStyleTelphone && StrValid(self.telphoneLabel.text)){
 
          NSString *callTel = [NSString stringWithFormat:@"tel://%@",self.telphoneLabel.text];
          [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callTel]];
-
     }
-
 }
 
-- (void)remove{
-    
+- (void)remove {
     [self removeFromSuperview];
-
 }
 
-- (void)show{
+- (void)show {
     
-     [self layoutIfNeeded];
+    [self layoutIfNeeded];
     [[UIApplication sharedApplication].keyWindow addSubview:self];
    
-
 }
 
 - (void)hiden{
 
     [self hiden_afterSeconds:0.5];
-
 }
 
-- (void)hiden_afterSeconds:(int)delayInseconds{
+- (void)hiden_afterSeconds:(int)delayInseconds {
 
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInseconds * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [UIView animateWithDuration:1 animations:^{
@@ -228,28 +220,30 @@
 
 }
 
-- (void)setMessage:(NSString *)message{
+- (void)setMessage:(NSString *)message {
+    
     _message = message;
     self.messageLabel.text = message;
-
 }
 
-- (void)setTelphoneNum:(NSString *)telphoneNum{
+- (void)setTelphoneNum:(NSString *)telphoneNum {
+    
     _telphoneNum = telphoneNum;
     self.telphoneLabel.text = telphoneNum;
     NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:telphoneNum];
     [attrString addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleSingle) range:[telphoneNum rangeOfString:telphoneNum]];//下划线
     self.telphoneLabel.attributedText = attrString;
-    
 }
 
-- (void)setIconImg:(UIImage *)iconImg{
+- (void)setIconImg:(UIImage *)iconImg {
+    
     _iconImg = iconImg;
     self.iconIMGView.image = iconImg;
 
 }
 
 - (UIImage *)imageWithColor:(UIColor *)color {
+    
     CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();

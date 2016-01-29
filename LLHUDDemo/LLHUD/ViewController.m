@@ -45,7 +45,6 @@
     hub.message = @"支付失败!\n\n请到个人用户中心支付";
     hub.iconImg = [UIImage imageNamed:@"HUD_failure"];
     [hub show];
-    
 }
 
 - (IBAction)Btn20:(id)sender {
@@ -56,17 +55,14 @@
 }
 
 - (IBAction)Btn22:(id)sender {
-    
     LLHUD *hub = [LLHUD HUDWithStyle:HUDStyleMesseage cancel:nil other:nil];
     hub.message = @"兑换成功!";
     hub.iconImg = [UIImage imageNamed:@"HUD_sucess"];
     [hub show];
     [hub hiden];
-
 }
 
 - (IBAction)Btn23:(id)sender {
-    
     LLHUD *hub = [LLHUD HUDWithStyle:HUDStyleMesseage cancel:nil other:nil];
     hub.message = @"兑换失败!";
     hub.iconImg = [UIImage imageNamed:@"HUD_failure"];
